@@ -36,8 +36,6 @@ def show_article(id):
         return make_response(article.to_dict(), 200)
     return make_response({"message": "Maximum pageview limit reached"}, 401)
 
-    make_response(article, 200)
-
 
 if __name__ == "__main__":
     app.run(port=5555)
